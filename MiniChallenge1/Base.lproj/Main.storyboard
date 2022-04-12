@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DIA-Pg-ytA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Cd0-YJ-fu8">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -77,7 +77,7 @@
         <!--Feature Info Template-->
         <scene sceneID="JbR-wY-ak5">
             <objects>
-                <viewController storyboardIdentifier="feature_info_template" title="Feature Info Template" id="DIA-Pg-ytA" customClass="FeatureInfoController" customModule="MiniChallenge1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FeatureInfoTemplate" title="Feature Info Template" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DIA-Pg-ytA" customClass="FeatureInfoController" customModule="MiniChallenge1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Kj-eU-0OY">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -145,7 +145,7 @@
         <!--Feature Info Detail-->
         <scene sceneID="7pA-CY-i9j">
             <objects>
-                <viewController storyboardIdentifier="feature_info_detail" title="Feature Info Detail" useStoryboardIdentifierAsRestorationIdentifier="YES" id="C5m-fe-tCB" customClass="FeaturesInfoOneController" customModule="MiniChallenge1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Feature Info Detail" id="C5m-fe-tCB" customClass="FeaturesInfoDetailController" customModule="MiniChallenge1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vaJ-wU-DhA">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -175,9 +175,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="featureDesc" destination="zRY-sN-rnq" id="Ztd-hE-xTM"/>
-                        <outlet property="featureTitle" destination="JgF-Gz-Iy1" id="V2a-EQ-XJf"/>
-                        <outlet property="imageView" destination="W8P-t6-ltR" id="mKW-gW-iwT"/>
+                        <outlet property="featureDesc" destination="zRY-sN-rnq" id="jCF-NU-cif"/>
+                        <outlet property="featureImage" destination="W8P-t6-ltR" id="Pg1-xq-qes"/>
+                        <outlet property="featureTitle" destination="JgF-Gz-Iy1" id="w8Q-oA-Qal"/>
+                        <outlet property="imageView" destination="W8P-t6-ltR" id="mfs-86-rut"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vp2-N9-evt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -624,6 +625,37 @@
             </objects>
             <point key="canvasLocation" x="884.61538461538464" y="844.54976303317528"/>
         </scene>
+        <!--Chat View-->
+        <scene sceneID="f7w-qf-DwU">
+            <objects>
+                <viewController title="Chat View" id="Cd0-YJ-fu8" customClass="ChatViewController" customModule="MiniChallenge1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5Tc-uF-Ed8">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Talk with Nyan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Npn-Ko-kgb">
+                                <rect key="frame" x="16" y="89" width="172.66666666666666" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2UH-Iu-V7d"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MdF-qt-A2S"/>
+                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                        <constraints>
+                            <constraint firstItem="MdF-qt-A2S" firstAttribute="trailing" secondItem="Npn-Ko-kgb" secondAttribute="trailing" constant="201.33333333333334" id="V6D-ip-85y"/>
+                            <constraint firstItem="Npn-Ko-kgb" firstAttribute="top" secondItem="MdF-qt-A2S" secondAttribute="top" constant="45" id="Viu-6D-HE6"/>
+                            <constraint firstItem="Npn-Ko-kgb" firstAttribute="leading" secondItem="5Tc-uF-Ed8" secondAttribute="leadingMargin" id="aQl-ph-Q53"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bMV-0G-OCz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="873.84615384615381" y="1659.9526066350711"/>
+        </scene>
         <!--PetLevelInfo-->
         <scene sceneID="h5X-we-EmH">
             <objects>
@@ -834,7 +866,6 @@
         <!--Popup Chart-->
         <scene sceneID="moH-yD-5Lu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hAW-8c-lyX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="popup_chart" title="Popup Chart" id="HNs-un-Gos" customClass="PopupChartController" customModule="MiniChallenge1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cEA-C9-0sF">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
@@ -856,6 +887,7 @@
                         </constraints>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hAW-8c-lyX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3385" y="121"/>
         </scene>

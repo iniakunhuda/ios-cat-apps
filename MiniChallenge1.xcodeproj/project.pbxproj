@@ -20,6 +20,8 @@
 		1A9FC4C528047F4E001EDAE4 /* FeatureInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9FC4C428047F4E001EDAE4 /* FeatureInfoController.swift */; };
 		1A9FC4C82804A7F6001EDAE4 /* FeaturesInfoDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9FC4C72804A7F6001EDAE4 /* FeaturesInfoDetailController.swift */; };
 		1A9FC4CA2804A99D001EDAE4 /* CustomPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9FC4C92804A99D001EDAE4 /* CustomPageViewController.swift */; };
+		1AE9E57A280536C60091EA21 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE9E579280536C60091EA21 /* ChatViewController.swift */; };
+		1AE9E57D280537EF0091EA21 /* MessageKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1AE9E57C280537EF0091EA21 /* MessageKit */; };
 		1AEA25C427FBE7A400731BED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEA25C327FBE7A400731BED /* AppDelegate.swift */; };
 		1AEA25C627FBE7A400731BED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEA25C527FBE7A400731BED /* SceneDelegate.swift */; };
 		1AEA25C827FBE7A400731BED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEA25C727FBE7A400731BED /* ViewController.swift */; };
@@ -64,6 +66,7 @@
 		1A9FC4C428047F4E001EDAE4 /* FeatureInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureInfoController.swift; sourceTree = "<group>"; };
 		1A9FC4C72804A7F6001EDAE4 /* FeaturesInfoDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturesInfoDetailController.swift; sourceTree = "<group>"; };
 		1A9FC4C92804A99D001EDAE4 /* CustomPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPageViewController.swift; sourceTree = "<group>"; };
+		1AE9E579280536C60091EA21 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		1AEA25C027FBE7A400731BED /* MiniChallenge1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniChallenge1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AEA25C327FBE7A400731BED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1AEA25C527FBE7A400731BED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AE9E57D280537EF0091EA21 /* MessageKit in Frameworks */,
 				1AFF432C27FFE1D60049690D /* BottomSheet in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -118,6 +122,7 @@
 		1A3B2E0827FD5A2000077962 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1AE9E5782805369A0091EA21 /* Chats */,
 				1A9FC4C62804A7DE001EDAE4 /* Features */,
 				1A253B2D2803C2A600E5D312 /* TableView */,
 				1AFF432D27FFE4490049690D /* Popup */,
@@ -153,6 +158,14 @@
 				1A9FC4C428047F4E001EDAE4 /* FeatureInfoController.swift */,
 			);
 			path = Features;
+			sourceTree = "<group>";
+		};
+		1AE9E5782805369A0091EA21 /* Chats */ = {
+			isa = PBXGroup;
+			children = (
+				1AE9E579280536C60091EA21 /* ChatViewController.swift */,
+			);
+			path = Chats;
 			sourceTree = "<group>";
 		};
 		1AEA25B727FBE7A400731BED = {
@@ -237,6 +250,7 @@
 			name = MiniChallenge1;
 			packageProductDependencies = (
 				1AFF432B27FFE1D60049690D /* BottomSheet */,
+				1AE9E57C280537EF0091EA21 /* MessageKit */,
 			);
 			productName = MiniChallenge1;
 			productReference = 1AEA25C027FBE7A400731BED /* MiniChallenge1.app */;
@@ -312,6 +326,7 @@
 			mainGroup = 1AEA25B727FBE7A400731BED;
 			packageReferences = (
 				1AFF432A27FFE1D60049690D /* XCRemoteSwiftPackageReference "BottomSheet" */,
+				1AE9E57B280537EF0091EA21 /* XCRemoteSwiftPackageReference "MessageKit" */,
 			);
 			productRefGroup = 1AEA25C127FBE7A400731BED /* Products */;
 			projectDirPath = "";
@@ -368,6 +383,7 @@
 				1A2F886527FEEA3D009C3FEE /* RecommendationItemView.swift in Sources */,
 				1A86676627FDEAB500BAA581 /* RecommendationController.swift in Sources */,
 				1AEA25C627FBE7A400731BED /* SceneDelegate.swift in Sources */,
+				1AE9E57A280536C60091EA21 /* ChatViewController.swift in Sources */,
 				1A7E892327FF90B40023F8EB /* RecommendationEmptyController.swift in Sources */,
 				1A1DBD01280346CB00A3E69B /* PopupProductDetailController.swift in Sources */,
 				1A55AB2027FE97C80063D286 /* ModelData.swift in Sources */,
@@ -718,6 +734,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		1AE9E57B280537EF0091EA21 /* XCRemoteSwiftPackageReference "MessageKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MessageKit/MessageKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
 		1AFF432A27FFE1D60049690D /* XCRemoteSwiftPackageReference "BottomSheet" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/gaetanomatonti/BottomSheet";
@@ -729,6 +753,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		1AE9E57C280537EF0091EA21 /* MessageKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1AE9E57B280537EF0091EA21 /* XCRemoteSwiftPackageReference "MessageKit" */;
+			productName = MessageKit;
+		};
 		1AFF432B27FFE1D60049690D /* BottomSheet */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 1AFF432A27FFE1D60049690D /* XCRemoteSwiftPackageReference "BottomSheet" */;

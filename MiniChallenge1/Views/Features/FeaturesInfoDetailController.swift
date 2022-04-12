@@ -11,11 +11,11 @@ class FeaturesInfoDetailController: UIViewController {
     
     var index = 0
 
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var featureImage: UIImageView!
     @IBOutlet weak var featureTitle: UILabel!
     @IBOutlet weak var featureDesc: UITextView!
     
-//    static func getInstance(index: Int) ->
+    //    static func getInstance(index: Int) ->
 //    FeaturesInfoOneController {
 ////        let vc = storyboard?.instantiateViewController(withIdentifier: "feature_info") as! FeaturesInfoOneController
 //        let vc = UIStoryboard(name: "feature_info_template", bundle: nil).instantiateViewController(identifier: "FeaturesInfoOneController") as! FeaturesInfoOneController
@@ -24,7 +24,7 @@ class FeaturesInfoDetailController: UIViewController {
 //    }
     
     static func getInstance(index: Int) -> FeaturesInfoDetailController {
-        let vc = UIStoryboard(name: "feature_info_detail", bundle: nil).instantiateViewController(identifier: "FeaturesInfoDetailController") as! FeaturesInfoDetailController
+        let vc = UIStoryboard(name: "FeaturesInfoDetailController", bundle: nil).instantiateViewController(identifier: "FeaturesInfoDetailController") as! FeaturesInfoDetailController
         vc.index = index
         return vc
     }
