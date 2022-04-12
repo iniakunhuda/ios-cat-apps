@@ -13,4 +13,22 @@ class RecommendationEmptyController: UIViewController {
         super.viewDidLoad()
     }
     
+    @IBAction func didTabButtonInfo() {
+        showPopupInfo()
+    }
+    
+    func showPopupInfo() {
+//        let rc = storyboard?.instantiateViewController(withIdentifier: "popup_pet_level") as! PopupPetLoverController
+//        self.present(rc, animated: true, completion: nil)
+        
+        let nav = storyboard?.instantiateViewController(withIdentifier: "popup_pet_level_empty") as! PopupPetLoverController
+        nav.modalPresentationStyle = .pageSheet
+        
+        if let sheet = nav.sheetPresentationController {
+            sheet.detents = [.medium(), .large()]
+            sheet.prefersGrabberVisible = true
+        }
+        present(nav, animated: true, completion: nil)
+    }
+    
 }

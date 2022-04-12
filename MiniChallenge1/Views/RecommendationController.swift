@@ -11,6 +11,7 @@ class RecommendationController: UIViewController, UITableViewDataSource, UITable
     
     @IBOutlet weak var segmentedDashboard: UISegmentedControl!
     @IBOutlet weak var tableRecommendation: UITableView!
+    @IBOutlet weak var chartImage: UIImageView!
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableRecommendation.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! RecommendationItemView
@@ -40,12 +41,27 @@ class RecommendationController: UIViewController, UITableViewDataSource, UITable
             print("TEST DEFAULT")
             break   }
         
-        print(foods[indexPath.row].title)
-        
         return cell
     }
-
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        var data: ProductItem?
+        switch segmentedDashboard.selectedSegmentIndex {
+        case 0:
+            data = foods[indexPath.row]
+        case 1:
+            data = hygienes[indexPath.row]
+        case 2:
+            data = healths[indexPath.row]
+        case 3:
+            data = others[indexPath.row]
+        default:
+            data = foods[indexPath.row]
+            break   }
+        
+        showDetailProduct(product: data!)
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
@@ -69,6 +85,33 @@ class RecommendationController: UIViewController, UITableViewDataSource, UITable
     func getModelDataByCategory(category: ProductCategory) -> [ProductItem] {
         return ModelData().products.filter{ landmark in
             return landmark.category == category }
+    }
+    
+    @IBAction func didTabButtonInfo() {
+        showPopupInfo()
+    }
+    
+    func showPopupInfo() {
+        let nav = storyboard?.instantiateViewController(withIdentifier: "popup_pet_level") as! PopupPetLoverController
+        nav.modalPresentationStyle = .pageSheet
+        
+        if let sheet = nav.sheetPresentationController {
+            sheet.detents = [.medium(), .large()]
+            sheet.prefersGrabberVisible = true
+        }
+        present(nav, animated: true, completion: nil)
+    }
+    
+    func showDetailProduct(product: ProductItem) {
+        let nav = storyboard?.instantiateViewController(withIdentifier: "popup_product_detail") as! PopupProductDetailController
+        nav.product = product
+        nav.modalPresentationStyle = .pageSheet
+        
+        if let sheet = nav.sheetPresentationController {
+            sheet.detents = [.large()]
+            sheet.prefersGrabberVisible = true
+        }
+        present(nav, animated: true, completion: nil)
     }
     
     @IBAction func segmentedChange(_ sender: Any) {
@@ -99,11 +142,16 @@ class RecommendationController: UIViewController, UITableViewDataSource, UITable
 //        stackView.axis = .vertical
 //
 //        view.addSubview(stackView)
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(RecommendationController.didTapGraph))
+        chartImage.addGestureRecognizer(tap)
+        chartImage.isUserInteractionEnabled = true
     }
     
-    
-    @IBAction func didTapButton() {
-        navigationController?.popViewController(animated: true)
+    @objc
+    func didTapGraph() {
+        let rc = storyboard?.instantiateViewController(withIdentifier: "popup_chart") as! PopupChartController
+        navigationController?.pushViewController( rc, animated:true)
     }
     
 }

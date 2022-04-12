@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "BottomSheet",
+        "repositoryURL": "https://github.com/gaetanomatonti/BottomSheet",
+        "state": {
+          "branch": null,
+          "revision": "c2965f2564b26e0c71c6eb276488014f47ed5a74",
+          "version": "0.3.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
