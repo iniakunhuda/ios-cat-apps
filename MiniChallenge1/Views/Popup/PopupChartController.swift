@@ -12,6 +12,8 @@ class PopupChartController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationController?.title = "Chart Title"
     }
     
     

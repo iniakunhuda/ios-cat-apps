@@ -31,4 +31,10 @@ class RecommendationEmptyController: UIViewController {
         present(nav, animated: true, completion: nil)
     }
     
+    
+    @IBAction func didTakeQuiz() {
+        print("HALLOOO!!!")
+        let rc = storyboard?.instantiateViewController(withIdentifier: "chat_with_nyan") as! BaseChatViewController
+        navigationController?.pushViewController( rc, animated:true)
+    }
 }

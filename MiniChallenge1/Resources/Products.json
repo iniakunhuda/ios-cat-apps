@@ -2,7 +2,7 @@
     {
         "id": "1",
         "category": "Food",
-        "title": "Makanan 1",
+        "title": "Food 1",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec condimentum diam. Aenean tincidunt nunc eu enim interdum porttitor. Sed malesuada, erat in ultricies vehicula, tortor felis cursus risus, ac sagittis arcu ipsum in neque. Aliquam erat volutpat. Sed id consequat sem. Nam massa nibh, tincidunt sit amet neque eu, sagittis viverra turpis. Cras eros nisl, pulvinar eu nunc eu, dapibus dapibus velit. Integer non tortor ut magna aliquet auctor. Aenean rutrum luctus rhoncus. Nam et maximus nisl. Curabitur luctus elit at venenatis aliquam. Duis vehicula molestie eros. Nam egestas dictum magna, eget consectetur nisl. Vivamus eget dolor magna. Nulla non augue sapien. Pellentesque odio turpis, tincidunt sed ligula in, ullamcorper lacinia nunc.",
         "price": "Rp50.000",
         "subtitle": "30gr",
@@ -31,7 +31,7 @@
     {
         "id": "2",
         "category": "Food",
-        "title": "Makanan 2",
+        "title": "Food 2",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec condimentum diam. Aenean tincidunt nunc eu enim interdum porttitor. Sed malesuada, erat in ultricies vehicula, tortor felis cursus risus, ac sagittis arcu ipsum in neque. Aliquam erat volutpat. Sed id consequat sem. Nam massa nibh, tincidunt sit amet neque eu, sagittis viverra turpis. Cras eros nisl, pulvinar eu nunc eu, dapibus dapibus velit. Integer non tortor ut magna aliquet auctor. Aenean rutrum luctus rhoncus. Nam et maximus nisl. Curabitur luctus elit at venenatis aliquam. Duis vehicula molestie eros. Nam egestas dictum magna, eget consectetur nisl. Vivamus eget dolor magna. Nulla non augue sapien. Pellentesque odio turpis, tincidunt sed ligula in, ullamcorper lacinia nunc.",
         "price": "Rp30.000",
         "subtitle": "40gr",
@@ -60,7 +60,7 @@
     {
         "id": "3",
         "category": "Food",
-        "title": "Makanan 3",
+        "title": "Food 3",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec condimentum diam. Aenean tincidunt nunc eu enim interdum porttitor. Sed malesuada, erat in ultricies vehicula, tortor felis cursus risus, ac sagittis arcu ipsum in neque. Aliquam erat volutpat. Sed id consequat sem. Nam massa nibh, tincidunt sit amet neque eu, sagittis viverra turpis. Cras eros nisl, pulvinar eu nunc eu, dapibus dapibus velit. Integer non tortor ut magna aliquet auctor. Aenean rutrum luctus rhoncus. Nam et maximus nisl. Curabitur luctus elit at venenatis aliquam. Duis vehicula molestie eros. Nam egestas dictum magna, eget consectetur nisl. Vivamus eget dolor magna. Nulla non augue sapien. Pellentesque odio turpis, tincidunt sed ligula in, ullamcorper lacinia nunc.",
         "price": "Rp20.000",
         "subtitle": "20gr",
@@ -89,7 +89,7 @@
     {
         "id": "4",
         "category": "Food",
-        "title": "Makanan 4",
+        "title": "Food 4",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec condimentum diam. Aenean tincidunt nunc eu enim interdum porttitor. Sed malesuada, erat in ultricies vehicula, tortor felis cursus risus, ac sagittis arcu ipsum in neque. Aliquam erat volutpat. Sed id consequat sem. Nam massa nibh, tincidunt sit amet neque eu, sagittis viverra turpis. Cras eros nisl, pulvinar eu nunc eu, dapibus dapibus velit. Integer non tortor ut magna aliquet auctor. Aenean rutrum luctus rhoncus. Nam et maximus nisl. Curabitur luctus elit at venenatis aliquam. Duis vehicula molestie eros. Nam egestas dictum magna, eget consectetur nisl. Vivamus eget dolor magna. Nulla non augue sapien. Pellentesque odio turpis, tincidunt sed ligula in, ullamcorper lacinia nunc.",
         "price": "Rp30.000",
         "subtitle": "100gr",
@@ -118,7 +118,7 @@
     {
         "id": "5",
         "category": "Food",
-        "title": "Makanan 5",
+        "title": "Food 5",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec condimentum diam. Aenean tincidunt nunc eu enim interdum porttitor. Sed malesuada, erat in ultricies vehicula, tortor felis cursus risus, ac sagittis arcu ipsum in neque. Aliquam erat volutpat. Sed id consequat sem. Nam massa nibh, tincidunt sit amet neque eu, sagittis viverra turpis. Cras eros nisl, pulvinar eu nunc eu, dapibus dapibus velit. Integer non tortor ut magna aliquet auctor. Aenean rutrum luctus rhoncus. Nam et maximus nisl. Curabitur luctus elit at venenatis aliquam. Duis vehicula molestie eros. Nam egestas dictum magna, eget consectetur nisl. Vivamus eget dolor magna. Nulla non augue sapien. Pellentesque odio turpis, tincidunt sed ligula in, ullamcorper lacinia nunc.",
         "price": "Rp10.000",
         "subtitle": "100gr",
@@ -147,7 +147,7 @@
     {
         "id": "6",
         "category": "Hygiene",
-        "title": "Hygiene 1",
+        "title": "Higenis 1",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec condimentum diam. Aenean tincidunt nunc eu enim interdum porttitor. Sed malesuada, erat in ultricies vehicula, tortor felis cursus risus, ac sagittis arcu ipsum in neque. Aliquam erat volutpat. Sed id consequat sem. Nam massa nibh, tincidunt sit amet neque eu, sagittis viverra turpis. Cras eros nisl, pulvinar eu nunc eu, dapibus dapibus velit. Integer non tortor ut magna aliquet auctor. Aenean rutrum luctus rhoncus. Nam et maximus nisl. Curabitur luctus elit at venenatis aliquam. Duis vehicula molestie eros. Nam egestas dictum magna, eget consectetur nisl. Vivamus eget dolor magna. Nulla non augue sapien. Pellentesque odio turpis, tincidunt sed ligula in, ullamcorper lacinia nunc.",
         "price": "Rp100.000",
         "subtitle": "1-3 Tahun",
@@ -176,7 +176,7 @@
     {
         "id": "7",
         "category": "Hygiene",
-        "title": "Hygiene 2",
+        "title": "Higenis 2",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec condimentum diam. Aenean tincidunt nunc eu enim interdum porttitor. Sed malesuada, erat in ultricies vehicula, tortor felis cursus risus, ac sagittis arcu ipsum in neque. Aliquam erat volutpat. Sed id consequat sem. Nam massa nibh, tincidunt sit amet neque eu, sagittis viverra turpis. Cras eros nisl, pulvinar eu nunc eu, dapibus dapibus velit. Integer non tortor ut magna aliquet auctor. Aenean rutrum luctus rhoncus. Nam et maximus nisl. Curabitur luctus elit at venenatis aliquam. Duis vehicula molestie eros. Nam egestas dictum magna, eget consectetur nisl. Vivamus eget dolor magna. Nulla non augue sapien. Pellentesque odio turpis, tincidunt sed ligula in, ullamcorper lacinia nunc.",
         "price": "Rp75.000",
         "subtitle": "< 1 Tahun",
@@ -205,7 +205,7 @@
     {
         "id": "8",
         "category": "Hygiene",
-        "title": "Hygiene 3",
+        "title": "Higenis 3",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec condimentum diam. Aenean tincidunt nunc eu enim interdum porttitor. Sed malesuada, erat in ultricies vehicula, tortor felis cursus risus, ac sagittis arcu ipsum in neque. Aliquam erat volutpat. Sed id consequat sem. Nam massa nibh, tincidunt sit amet neque eu, sagittis viverra turpis. Cras eros nisl, pulvinar eu nunc eu, dapibus dapibus velit. Integer non tortor ut magna aliquet auctor. Aenean rutrum luctus rhoncus. Nam et maximus nisl. Curabitur luctus elit at venenatis aliquam. Duis vehicula molestie eros. Nam egestas dictum magna, eget consectetur nisl. Vivamus eget dolor magna. Nulla non augue sapien. Pellentesque odio turpis, tincidunt sed ligula in, ullamcorper lacinia nunc.",
         "price": "Rp100.000",
         "subtitle": "< 1 Tahun",

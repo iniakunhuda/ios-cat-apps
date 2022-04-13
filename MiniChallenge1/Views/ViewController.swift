@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func didTapButton() {
-        let rc = storyboard?.instantiateViewController(withIdentifier: "recommendation") as! RecommendationController
+        let rc = storyboard?.instantiateViewController(withIdentifier: "recommendation_empty") as! RecommendationEmptyController
         navigationController?.pushViewController( rc, animated:true)
     }
 }

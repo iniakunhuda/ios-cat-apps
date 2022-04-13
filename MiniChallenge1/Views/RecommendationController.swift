@@ -128,6 +128,8 @@ class RecommendationController: UIViewController, UITableViewDataSource, UITable
         super.viewDidLoad()
         title = "Recommendation"
         
+//        navigationController?.setNavigationBarHidden(true, animated: false)
+        
         tableRecommendation.dataSource = self
         tableRecommendation.delegate = self
         
@@ -150,8 +152,17 @@ class RecommendationController: UIViewController, UITableViewDataSource, UITable
     
     @objc
     func didTapGraph() {
-        let rc = storyboard?.instantiateViewController(withIdentifier: "popup_chart") as! PopupChartController
-        navigationController?.pushViewController( rc, animated:true)
+//        let rc = storyboard?.instantiateViewController(withIdentifier: "popup_chart") as! PopupChartController
+//        navigationController?.viewcontroller( rc, animated:true)
+        
+        let nav = storyboard?.instantiateViewController(withIdentifier: "popup_chart") as! PopupChartController
+        nav.modalPresentationStyle = .pageSheet
+        
+        if let sheet = nav.sheetPresentationController {
+            sheet.detents = [.medium(), .large()]
+            sheet.prefersGrabberVisible = true
+        }
+        present(nav, animated: true, completion: nil)
     }
     
 }

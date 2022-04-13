@@ -20,7 +20,9 @@
 		1A9FC4C528047F4E001EDAE4 /* FeatureInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9FC4C428047F4E001EDAE4 /* FeatureInfoController.swift */; };
 		1A9FC4C82804A7F6001EDAE4 /* FeaturesInfoDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9FC4C72804A7F6001EDAE4 /* FeaturesInfoDetailController.swift */; };
 		1A9FC4CA2804A99D001EDAE4 /* CustomPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9FC4C92804A99D001EDAE4 /* CustomPageViewController.swift */; };
-		1AE9E57A280536C60091EA21 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE9E579280536C60091EA21 /* ChatViewController.swift */; };
+		1AB1098928064FC80092E85D /* WaitingResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB1098828064FC80092E85D /* WaitingResultController.swift */; };
+		1ADCA5052805CE49001C0A99 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADCA5042805CE49001C0A99 /* ChatViewController.swift */; };
+		1AE9E57A280536C60091EA21 /* BaseChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE9E579280536C60091EA21 /* BaseChatViewController.swift */; };
 		1AE9E57D280537EF0091EA21 /* MessageKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1AE9E57C280537EF0091EA21 /* MessageKit */; };
 		1AEA25C427FBE7A400731BED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEA25C327FBE7A400731BED /* AppDelegate.swift */; };
 		1AEA25C627FBE7A400731BED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEA25C527FBE7A400731BED /* SceneDelegate.swift */; };
@@ -66,7 +68,9 @@
 		1A9FC4C428047F4E001EDAE4 /* FeatureInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureInfoController.swift; sourceTree = "<group>"; };
 		1A9FC4C72804A7F6001EDAE4 /* FeaturesInfoDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturesInfoDetailController.swift; sourceTree = "<group>"; };
 		1A9FC4C92804A99D001EDAE4 /* CustomPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPageViewController.swift; sourceTree = "<group>"; };
-		1AE9E579280536C60091EA21 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		1AB1098828064FC80092E85D /* WaitingResultController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingResultController.swift; sourceTree = "<group>"; };
+		1ADCA5042805CE49001C0A99 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		1AE9E579280536C60091EA21 /* BaseChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseChatViewController.swift; sourceTree = "<group>"; };
 		1AEA25C027FBE7A400731BED /* MiniChallenge1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniChallenge1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AEA25C327FBE7A400731BED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1AEA25C527FBE7A400731BED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -129,6 +133,7 @@
 				1A86676527FDEAB500BAA581 /* RecommendationController.swift */,
 				1AEA25C727FBE7A400731BED /* ViewController.swift */,
 				1A7E892227FF90B40023F8EB /* RecommendationEmptyController.swift */,
+				1AB1098828064FC80092E85D /* WaitingResultController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -163,7 +168,8 @@
 		1AE9E5782805369A0091EA21 /* Chats */ = {
 			isa = PBXGroup;
 			children = (
-				1AE9E579280536C60091EA21 /* ChatViewController.swift */,
+				1AE9E579280536C60091EA21 /* BaseChatViewController.swift */,
+				1ADCA5042805CE49001C0A99 /* ChatViewController.swift */,
 			);
 			path = Chats;
 			sourceTree = "<group>";
@@ -375,6 +381,7 @@
 				1A9FC4CA2804A99D001EDAE4 /* CustomPageViewController.swift in Sources */,
 				1A9FC4C528047F4E001EDAE4 /* FeatureInfoController.swift in Sources */,
 				1AFF432F27FFE4650049690D /* PopupPetLevelController.swift in Sources */,
+				1AB1098928064FC80092E85D /* WaitingResultController.swift in Sources */,
 				1A253B312803DC9A00E5D312 /* PopupChartController.swift in Sources */,
 				1A55AB1B27FE87090063D286 /* ProductItem.swift in Sources */,
 				1AEA25C827FBE7A400731BED /* ViewController.swift in Sources */,
@@ -383,11 +390,12 @@
 				1A2F886527FEEA3D009C3FEE /* RecommendationItemView.swift in Sources */,
 				1A86676627FDEAB500BAA581 /* RecommendationController.swift in Sources */,
 				1AEA25C627FBE7A400731BED /* SceneDelegate.swift in Sources */,
-				1AE9E57A280536C60091EA21 /* ChatViewController.swift in Sources */,
+				1AE9E57A280536C60091EA21 /* BaseChatViewController.swift in Sources */,
 				1A7E892327FF90B40023F8EB /* RecommendationEmptyController.swift in Sources */,
 				1A1DBD01280346CB00A3E69B /* PopupProductDetailController.swift in Sources */,
 				1A55AB2027FE97C80063D286 /* ModelData.swift in Sources */,
 				1A30E91728002EB000832614 /* PopupPetLevelEmptyController.swift in Sources */,
+				1ADCA5052805CE49001C0A99 /* ChatViewController.swift in Sources */,
 				1A9FC4C82804A7F6001EDAE4 /* FeaturesInfoDetailController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
